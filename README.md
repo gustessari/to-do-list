@@ -6,7 +6,7 @@ Here is a structured and comprehensive README for your "To-Do List" project.
 
 This is a simple **To-Do List** web application built using **HTML**, **CSS**, and **JavaScript**. The app allows users to add, delete, and mark tasks as completed. It is responsive and provides a clean, user-friendly interface.
 
-![alt text](image-1.png)
+![alt text](example.png)
 
 ## Table of Contents 🔗
 - [Features](#features)
