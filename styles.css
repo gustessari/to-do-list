@@ -23,9 +23,9 @@ h1 {
 
 .input-container {
   display: flex; /* Use flexbox to align input and button */
-  justify-content: space-between; /* Space between input and button */
+  justify-content: center; /* Space between input and button */
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 input[type="text"] {
@@ -37,20 +37,48 @@ input[type="text"] {
   background-color: #DFD0B8
 }
 
+input:focus {
+  outline: none;
+  border: none;
+}
+
 button {
-  padding: 10px;
-  width: 70px;
   background-color: #4F6F52;
   color: #DFD0B8;
-  border: none;
+  border: thick;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
-  display: inline-block; 
+  display: block;
+  height: 40px;
+  width: 40px;
 }
 
 button:hover {
   background-color: #A1C398;
+}
+
+.div-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+i.edit-icon {
+  color: #31363F;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+i.edit-icon:hover {
+  color: #31363fbd;
+}
+
+i.delete-icon {
+  color: #803D3B;
+  cursor: pointer;
+}
+
+i.delete-icon:hover {
+  color: #803d3bab;
 }
 
 ul {
@@ -71,11 +99,13 @@ li {
   overflow: hidden;  
   max-width: 100%;
   border-radius: 8px;
+  animation: fadeIn 1s ease-in-out;
 }
 
-li.completed {
+span.completed {
   text-decoration: line-through;
-  color: #888;
+  font-style: italic;
+  color: #000000b3;
 }
 
 li span {
@@ -84,23 +114,9 @@ li span {
   margin-right: 10px; /* Add some space between text and button */
   font-size: 16px;
   text-align: start;
+  user-select: none;
 }
 
-button.delete-btn {
-  background-color: #803D3B;
-  padding: 5px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  color: white;
-  flex-shrink: 0;
-  width: 70px;
-  text-align: center;
-}
-
-button.delete-btn:hover {
-  background-color: #FA7070;
-}
 
 /* Make responsive for smaller screens */
 @media (max-width: 600px) {
@@ -119,4 +135,9 @@ button.delete-btn:hover {
   li {
       flex-wrap: wrap; /* Allow wrapping of long tasks */
   }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

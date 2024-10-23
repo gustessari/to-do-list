@@ -6,12 +6,13 @@ Here is a structured and comprehensive README for your "To-Do List" project.
 
 This is a simple **To-Do List** web application built using **HTML**, **CSS**, and **JavaScript**. The app allows users to add, delete, and mark tasks as completed. It is responsive and provides a clean, user-friendly interface.
 
+![alt text](image-1.png)
+
 ## Table of Contents 🔗
 - [Features](#features)
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Code Overview](#code-overview)
 - [Responsiveness](#responsiveness)
 - [Future Enhancements](#future-enhancements)
 - [Contributing](#contributing)
@@ -21,6 +22,7 @@ This is a simple **To-Do List** web application built using **HTML**, **CSS**, a
 
 - Add tasks to the list.
 - Delete tasks from the list.
+- All tasks are saved on local-storage.
 - Mark tasks as completed or uncompleted by clicking the task text.
 - Responsive design for mobile and desktop.
 - User-friendly interface with modern styling.
@@ -53,32 +55,10 @@ No additional setup is required.
 
 1. Open the **To-Do List** application in your browser.
 2. Enter a task in the "Add a new task" input field.
-3. Click the **Add** button or press **Enter** to add the task to the list.
+3. Click the **Check** button or press **Enter** to add the task to the list.
 4. To mark a task as completed, click on the task text.
-5. To delete a task, click the **Delete** button next to the task.
-   
-## Code Overview 💻
-
-### HTML (`index.html`)
-The structure consists of:
-- A container that holds the header, input field, and task list.
-- An input field for adding new tasks and a button for submitting tasks.
-- An unordered list (`<ul>`) to display tasks.
-
-### CSS (`styles.css`)
-- Flexbox is used for layout, ensuring that elements like the input and buttons are aligned properly.
-- The UI is styled with a modern, minimalistic look, including hover effects for buttons.
-- The design is responsive, adjusting to different screen sizes.
-
-### JavaScript (`script.js`)
-- Handles the addition of tasks to the list.
-- Implements functionality for marking tasks as complete or deleting them from the list.
-- Tasks are dynamically added to the DOM when the user submits a task.
-
-#### Key JavaScript Functions:
-- `addTask()`: Captures the input value, creates a new list item, and appends it to the task list.
-- `deleteTask()`: Removes a task from the DOM when the delete button is clicked.
-- `toggleComplete()`: Marks a task as completed by toggling the class `completed`.
+5. To delete a task, click on the **Thrash Icon** next to the task.
+6. To edit a task, click on the **Pencil Icon** next to the task.
 
 ## Responsiveness 📲
 
@@ -90,10 +70,11 @@ The app is designed to work on all screen sizes, from mobile devices to large de
 
 ## Future Enhancements 📈
 
-- **Persistent storage**: Add localStorage functionality to save tasks even after the page is refreshed.
-- **Edit tasks**: Allow users to edit tasks after they've been added.
+- ~~**Persistent storage**: Add localStorage functionality to save tasks even after the page is refreshed.~~
+- ~~**Edit tasks**: Allow users to edit tasks after they've been added.~~
 - **Animations**: Add animations when adding or removing tasks for a smoother user experience.
 - **List categories**: Implement list categorization and filtering (e.g., work, personal).
+- **Add new lists**: Allow users to add different lists.
 ## Contributing 🤜🏻🤛🏻
 
 Contributions are welcome! Feel free to submit a pull request or open an issue if you have any suggestions or improvements.
